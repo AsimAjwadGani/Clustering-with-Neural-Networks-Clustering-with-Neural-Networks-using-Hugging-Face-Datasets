@@ -1,11 +1,11 @@
 
-# 📊 Clustering with Neural Networks using Hugging Face Datasets
+#  Clustering with Neural Networks using Hugging Face Datasets
 
 This project implements an unsupervised learning pipeline to cluster news headlines from the **AG News dataset** using deep learning and traditional clustering methods. The system combines **BERT embeddings**, **PCA dimensionality reduction**, an **autoencoder**, and **KMeans** clustering — with comprehensive evaluation and visualization.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -18,7 +18,7 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 - **Input**: AG News headlines  
 - **Embedding**: `bert-base-uncased` (768D)  
@@ -33,7 +33,7 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 - Source: [AG News Dataset](https://huggingface.co/datasets/ag_news)
 - Total samples: 120,000  
@@ -43,7 +43,7 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## ⚙️ Hyperparameters
+## ⚙ Hyperparameters
 
 | Parameter             | Value     |
 |-----------------------|-----------|
@@ -56,21 +56,21 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## 📈 Evaluation Results
+##  Evaluation Results
 
 | Method                  | Silhouette Score | Davies-Bouldin Index |
 |------------------------|------------------|----------------------|
 | KMeans on PCA          | 0.0838           | 2.4802               |
 | Autoencoder + KMeans   | 0.0715           | 2.3910               |
 
-✅ **Estimated Accuracy** via pseudo-labeling: **71.20%**  
-📌 **Trainable Parameters** in Autoencoder: **99,424**
+ **Estimated Accuracy** via pseudo-labeling: **71.20%**  
+ **Trainable Parameters** in Autoencoder: **99,424**
 
 ![t-SNE Visualization](tsne.png)
 
 ---
 
-## ❗ Limitations
+##  Limitations
 
 - KMeans requires predefined `k` and assumes spherical clusters.  
 - BERT embeddings often encode dense, overlapping semantics.  
@@ -78,7 +78,7 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## 📌 Future Work
+##  Future Work
 
 - Add contrastive learning to improve embedding separability  
 - Use dynamic clustering or DEC loss  
