@@ -9,10 +9,9 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ```
 .
-├── model.py / notebook.ipynb    # Implementation (autoencoder, training loop)
+├── model.py / notebook42d8371c73.ipynb    # Implementation (autoencoder, training loop)
 ├── tsne.png                     # t-SNE visualization of final clusters
 ├── block_diagram.png            # Block diagram of full model pipeline
-├── final_report_complete.tex    # Full IEEE LaTeX report with experimental results
 ├── README.md                    # You're here!
 ```
 
@@ -43,7 +42,7 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## ⚙ Hyperparameters
+## Hyperparameters
 
 | Parameter             | Value     |
 |-----------------------|-----------|
@@ -86,7 +85,7 @@ This project implements an unsupervised learning pipeline to cluster news headli
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Asim Ajwad Gani**  
 Department of Computer Science and Engineering, BRAC University  
